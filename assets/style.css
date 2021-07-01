@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url('../assets/img/birthbg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.images img:nth-child(1){
+    width: 8%;
+    margin-left: 65.4%;
+    margin-top: 5%;
+    animation: happy 2s ease-in 0s 1 forwards;
+} 
+
+@keyframes happy{
+    from{
+        transform: translateY(-15vh);
+    }
+
+    to{
+        transform: translateY(0vh);
+    }
+}
+
+.images img:nth-child(2){
+    width: 33%;
+    margin-top: -2%;
+    margin-left: -2%;
+    animation: birth 2s ease-in 2s 1 forwards;
+    opacity: 0;
+} 
+
+@keyframes birth{
+    from{
+        transform: translateX(-68vh);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(103vh);
+        opacity: 1;
+    }
+}
+
+.images img:nth-child(3){
+    position: relative;
+    z-index: 2;
+    width: 16%;
+    margin-left: 54%;
+    margin-top: -4%;
+    animation: name 3s ease-in 5s 1 forwards;
+    opacity: 0;
+}
+
+@keyframes name{
+    from{
+        transform: scale(15) rotate(720deg);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.ani{
+    animation: bg 3s ease-in 2s 0 forwards;
+}
+
+.container{
+    color: #616a73;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+}
+
+.container h1{
+    display: inline-block;
+    font-size: 2rem;
+    border-bottom: 2px solid #616a73;
+    margin-bottom: 5px;
+    padding: 10px 0px;
+    width: 40%;
+}
+
+.box{
+    width: 100%;
+    margin: 25px 0px;
+    border-bottom: 2px solid #616a73;
+}
+
+.box input{
+    background: none;
+    width: 100%;
+    margin: 5px 30px;
+    font-size: 0.8rem;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 2px 10px;
+}
+
+.box i{
+    margin-top: 10px;
+    margin-bottom: -20px;
+    width: 25px;
+    text-align: center;
+    float: left;
+}
+
+#btn{
+    cursor: pointer;
+    outline: none;
+    margin: 0px 0px;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: #42484f;
+    font-weight: bold;
+}
+
+#btn:hover{
+    color: white;
+}
+
+.ballons img{
+    width: 40px;
+    animation: balon 7s linear infinite;
+}
+
+.ballons{
+    width: 82%;
+    margin-left: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position:absolute;
+    bottom: -80px;
+    
+}
+
+@keyframes balon{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    70%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.ballons img:nth-child(1){
+    animation-delay: 5s;
+    width: 35px;
+}
+.ballons img:nth-child(2){
+    animation-delay: 1s;
+    width: 20px;
+}
+.ballons img:nth-child(3){
+    animation-delay: 3s;
+}
+.ballons img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.ballons img:nth-child(5){
+    animation-delay: 2s;
+    width: 45px;
+}
+.ballons img:nth-child(6){
+    animation-delay: 5.5s;
+    width: 40px;
+}
+.ballons img:nth-child(7){
+    animation-delay: 7.5s;
+    width: 55px;
+}
+.ballons img:nth-child(8){
+    animation-delay: 6s;
+}
+
+.ballons img:nth-child(9){
+    animation-delay:0s;
+}
+.ballons img:nth-child(10){
+    animation-delay: 1.5s;
+    width: 30px;
+}
+.ballons img:nth-child(11){
+    animation-delay: 8s;
+}
+.ballons img:nth-child(12){
+    animation-delay: 4s;
+    width: 45px;
+}
+.ballons img:nth-child(13){
+    animation-delay: 9s;
+}
+.ballons img:nth-child(14){
+    animation-delay: 7s;
+}
+
+.ani {
+    opacity: 0;
+    animation: full 4s ease-in 8s 1 forwards;
+}
+
+@keyframes full {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
